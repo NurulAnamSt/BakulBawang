@@ -188,28 +188,10 @@ def show_products():
         st.warning("Tidak ada produk")
         return
     
-    tab1, tab2, tab3 = st.tabs(["Semua Produk", "Bawang", "Bibit"])
-    
-    with tab1:
-        for index, product in enumerate(products):
-            display_product_card(product, index)
-            st.divider()
-    
-    with tab2:
-        bawang_products = [p for p in products if p["category"] == "bawang"]
-        if not bawang_products:
-            st.warning("Tidak ada produk bawang")
-        for index, product in enumerate(bawang_products):
-            display_product_card(product, index)
-            st.divider()
-    
-    with tab3:
-        bibit_products = [p for p in products if p["category"] == "bibit"]
-        if not bibit_products:
-            st.warning("Tidak ada produk bibit")
-        for index, product in enumerate(bibit_products):
-            display_product_card(product, index)
-            st.divider()
+    # Menampilkan semua produk tanpa tab kategori
+    for index, product in enumerate(products):
+        display_product_card(product, index)
+        st.divider()
 
 # ====================== FUNGSI KERANJANG ======================
 def add_to_cart(product, quantity):
