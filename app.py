@@ -32,7 +32,7 @@ def setup_files():
             {
                 "id": 1,
                 "name": "Bawang Merah",
-                "price": 37905,
+                "price": 30000,
                 "stock": 100,
                 "description": "Bawang merah segar kualitas premium",
                 "category": "bawang",
@@ -41,7 +41,7 @@ def setup_files():
             {
                 "id": 2,
                 "name": "Bibit Bawang Merah",
-                "price": 49999,
+                "price": 50000,
                 "stock": 50,
                 "description": "Bibit unggul siap tanam",
                 "category": "bibit",
