@@ -306,7 +306,7 @@ def show_checkout():
         st.subheader("Metode Pembayaran")
         payment_method = st.selectbox(
             "Pembayaran",
-            ["Transfer BRI", "Transfer BCA", "Transfer SeaBank", "COD (Bayar di Tempat)"]
+            ["Transfer BRI ( 066101018157538 )", "Transfer BCA ( 3780832656 )", "Transfer SeaBank ( 901228832313 )", "COD (Bayar di Tempat)"]
         )
         
         st.subheader("Ringkasan Pembayaran")
